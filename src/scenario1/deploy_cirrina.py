@@ -133,19 +133,6 @@ try:
         
         time.sleep(10)
 
-        with en.actions(roles=roles["gas"]) as a:
-            a.docker_container(
-                name="gas",
-                image=CIRRINA_IMAGE,
-                network_mode="host",
-                volumes=["/tmp/metrics:/metrics:rw"],
-                env={
-                    "RUN": "gasSafety",
-                    "MAIN_URI": MAIN_URI,
-                    "ETCD_CONTEXT_URL": f"http://{gas_addr}:2379",
-                },
-                state="started",
-            )
         with en.actions(roles=roles["hvac"]) as a:
             a.docker_container(
                 name="hvac",
@@ -154,6 +141,19 @@ try:
                 volumes=["/tmp/metrics:/metrics:rw"],
                 env={
                     "RUN": "hvac",
+                    "MAIN_URI": MAIN_URI,
+                    "ETCD_CONTEXT_URL": f"http://{gas_addr}:2379",
+                },
+                state="started",
+            )
+        with en.actions(roles=roles["gas"]) as a:
+            a.docker_container(
+                name="gas",
+                image=CIRRINA_IMAGE,
+                network_mode="host",
+                volumes=["/tmp/metrics:/metrics:rw"],
+                env={
+                    "RUN": "gasSafety",
                     "MAIN_URI": MAIN_URI,
                     "ETCD_CONTEXT_URL": f"http://{gas_addr}:2379",
                 },

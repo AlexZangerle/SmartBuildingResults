@@ -239,23 +239,6 @@ spec:
                 ],
             )
 
-        with en.actions(roles=roles["gas"]) as a:
-            a.docker_container(
-                name="gas",
-                image=ACTOR_IMAGE,
-                network_mode="host",
-                state="started",
-                volumes=["/tmp/metrics:/metrics:rw"],
-                env={
-                    "ROLE": "gasSafety",
-                    "ACTOR_ID": "gasSafety-0",
-                    "BUILDING_SERVICE_URL": "http://localhost:8005",
-                    "DAPR_HTTP_ENDPOINT": "http://localhost:3500",
-                    "DAPR_GRPC_ENDPOINT": "http://localhost:50001",
-                    "METRICS_DIRECTORY": "/metrics",
-                },
-            )
-
         with en.actions(roles=roles["hvac"]) as a:
             a.docker_container(
                 name="hvac",
@@ -273,6 +256,25 @@ spec:
                     "METRICS_DIRECTORY": "/metrics",
                 },
             )
+
+        with en.actions(roles=roles["gas"]) as a:
+            a.docker_container(
+                name="gas",
+                image=ACTOR_IMAGE,
+                network_mode="host",
+                state="started",
+                volumes=["/tmp/metrics:/metrics:rw"],
+                env={
+                    "ROLE": "gasSafety",
+                    "ACTOR_ID": "gasSafety-0",
+                    "BUILDING_SERVICE_URL": "http://localhost:8005",
+                    "DAPR_HTTP_ENDPOINT": "http://localhost:3500",
+                    "DAPR_GRPC_ENDPOINT": "http://localhost:50001",
+                    "METRICS_DIRECTORY": "/metrics",
+                },
+            )
+
+
 
         # Wait for data collection
         print(f"--- {run_label}: Collecting data for {TIME_BEFORE_FETCH}s ---")
