@@ -10,7 +10,7 @@ from tqdm import tqdm
 en.init_logging(level=logging.INFO)
 
 # --- Experiment parameters ---
-EXPERIMENT = "s1"
+EXPERIMENT = "s1-gas"
 ACTOR_IMAGE = "alexzangerle/smartbuilding-dapr:latest"
 REDIS_IMAGE = "redis:8.2.4-alpine"
 SIDECAR_IMAGE = "daprio/daprd:1.16.0"

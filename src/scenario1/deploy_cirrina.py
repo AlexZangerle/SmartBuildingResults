@@ -11,7 +11,7 @@ from tqdm import tqdm
 en.init_logging(level=logging.INFO)
 
 # --- Experiment parameters ---
-EXPERIMENT = "s1"
+EXPERIMENT = "s1-gas"
 CIRRINA_IMAGE = "collaborativestatemachines/cirrina:unstable"
 ETCD_IMAGE = "quay.io/coreos/etcd:v3.5.12"
 SERVICE_IMAGE = "alexzangerle/buildingservice-csm-s1:latest"
