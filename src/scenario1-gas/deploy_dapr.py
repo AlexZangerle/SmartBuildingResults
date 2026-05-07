@@ -19,8 +19,8 @@ SERVICE_IMAGE = "alexzangerle/buildingservice-dapr-s1:latest"
 SIMULATION_IMAGE = "alexzangerle/simulation-dapr-s1:latest"
 COMPONENTS_PATH = "/tmp/dapr-components"
 LOCAL_ROOT = Path(f"./results/smartBuilding/{EXPERIMENT}/dapr")
-TIME_BEFORE_FETCH = 60 * 20
-NUM_RUNS = 5
+TIME_BEFORE_FETCH = 60 * 2
+NUM_RUNS = 1
 START_TIME = None
 WALL_TIME = "03:00:00"
 # -------------------------------------
@@ -222,7 +222,9 @@ spec:
                 ],
                 volumes=[f"{COMPONENTS_PATH}:/components"],
             )
+
         time.sleep(10)
+
         with en.actions(roles=roles["simulation"]) as a:
             a.docker_container(
                 name="simulation",
@@ -238,6 +240,8 @@ spec:
                     "--dapr-url=http://localhost:3500"
                 ],
             )
+
+        time.sleep(10)
 
         with en.actions(roles=roles["hvac"]) as a:
             a.docker_container(
