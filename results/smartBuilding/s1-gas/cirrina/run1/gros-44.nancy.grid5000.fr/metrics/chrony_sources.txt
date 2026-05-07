@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ put92-2_migr-82-66-40-79>     1   6   377    12    +26us[  +26us] +/-   11ms
+^+ 172-232-44-156.ip.linode>     2   6   377    15  +2605us[+2605us] +/-   25ms
+^* 109.190.177.205               1   7   377    79   -168us[ -198us] +/-   10ms
+^+ lfbn-rei-1-285-215.w86-2>     2   7   377    12   -262us[ -262us] +/-   18ms

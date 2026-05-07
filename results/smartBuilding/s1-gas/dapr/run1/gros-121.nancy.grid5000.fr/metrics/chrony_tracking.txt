@@ -1,0 +1,13 @@
+Reference ID    : 6DBEB1CD (109.190.177.205)
+Stratum         : 2
+Ref time (UTC)  : Thu May 07 08:22:40 2026
+System time     : 0.000014251 seconds slow of NTP time
+Last offset     : +0.000005056 seconds
+RMS offset      : 0.000105038 seconds
+Frequency       : 37.283 ppm slow
+Residual freq   : +0.006 ppm
+Skew            : 0.181 ppm
+Root delay      : 0.019507160 seconds
+Root dispersion : 0.000248155 seconds
+Update interval : 129.7 seconds
+Leap status     : Normal
