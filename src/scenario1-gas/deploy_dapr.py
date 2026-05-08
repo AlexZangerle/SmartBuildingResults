@@ -121,38 +121,6 @@ spec:
             a.copy(src="config/redis/components/", dest=COMPONENTS_PATH + "/")
 
         # Deploy containers
-        with en.actions(roles=roles["simulation"]) as a:
-            a.docker_container(
-                name="redis", image=REDIS_IMAGE, network_mode="host", state="started"
-            )
-            a.docker_container(
-                name="placement",
-                image=PLACEMENT_IMAGE,
-                network_mode="host",
-                state="started",
-                command=["./placement", "--port", "50006"],
-            )
-            a.docker_container(
-                name="simulation-sidecar",
-                image=SIDECAR_IMAGE,
-                network_mode="host",
-                state="started",
-                command=[
-                    "./daprd",
-                    "--app-id",
-                    "simulation",
-                    "--app-port",
-                    "3000",
-                    "--resources-path",
-                    "/components",
-                    "--placement-host-address",
-                    "localhost:50006",
-                    "--metrics-port",
-                    "9091",
-                ],
-                volumes=[f"{COMPONENTS_PATH}:/components"],
-            )
-
         with en.actions(roles=roles["gas"]) as a:
             a.docker_container(
                 name="building-service", image=SERVICE_IMAGE, network_mode="host", state="started", volumes=["/tmp/metrics:/metrics:rw"],
@@ -176,6 +144,38 @@ spec:
                     "./daprd",
                     "--app-id",
                     "gas-safety",
+                    "--app-port",
+                    "3000",
+                    "--resources-path",
+                    "/components",
+                    "--placement-host-address",
+                    "localhost:50006",
+                    "--metrics-port",
+                    "9091",
+                ],
+                volumes=[f"{COMPONENTS_PATH}:/components"],
+            )
+
+        with en.actions(roles=roles["simulation"]) as a:
+            a.docker_container(
+                name="redis", image=REDIS_IMAGE, network_mode="host", state="started"
+            )
+            a.docker_container(
+                name="placement",
+                image=PLACEMENT_IMAGE,
+                network_mode="host",
+                state="started",
+                command=["./placement", "--port", "50006"],
+            )
+            a.docker_container(
+                name="simulation-sidecar",
+                image=SIDECAR_IMAGE,
+                network_mode="host",
+                state="started",
+                command=[
+                    "./daprd",
+                    "--app-id",
+                    "simulation",
                     "--app-port",
                     "3000",
                     "--resources-path",
@@ -240,8 +240,6 @@ spec:
                     "--dapr-url=http://localhost:3500"
                 ],
             )
-
-        time.sleep(10)
 
         with en.actions(roles=roles["hvac"]) as a:
             a.docker_container(
