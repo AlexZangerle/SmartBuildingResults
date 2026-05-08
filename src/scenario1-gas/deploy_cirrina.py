@@ -18,8 +18,8 @@ SERVICE_IMAGE = "alexzangerle/buildingservice-csm-s1:latest"
 SIMULATION_IMAGE = "alexzangerle/simulation-csm-s1:latest"
 MAIN_URI = "https://raw.githubusercontent.com/AlexZangerle/csmba/refs/heads/main/smartBuilding/main.pkl"
 LOCAL_ROOT = Path(f"./results/smartBuilding/{EXPERIMENT}/cirrina")
-TIME_BEFORE_FETCH = 60 * 2
-NUM_RUNS = 1
+TIME_BEFORE_FETCH = 60 * 17
+NUM_RUNS = 5
 START_TIME = None
 WALL_TIME = "03:00:00"
 # -------------------------------------
