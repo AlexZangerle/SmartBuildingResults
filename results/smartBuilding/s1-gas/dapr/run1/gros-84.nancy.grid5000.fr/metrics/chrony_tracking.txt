@@ -1,0 +1,13 @@
+Reference ID    : 335B53A8 (meshflow.net)
+Stratum         : 4
+Ref time (UTC)  : Fri May 08 10:57:46 2026
+System time     : 0.000023089 seconds fast of NTP time
+Last offset     : +0.000007505 seconds
+RMS offset      : 0.001027885 seconds
+Frequency       : 34.484 ppm slow
+Residual freq   : +0.002 ppm
+Skew            : 0.091 ppm
+Root delay      : 0.019925738 seconds
+Root dispersion : 0.000397207 seconds
+Update interval : 64.5 seconds
+Leap status     : Normal

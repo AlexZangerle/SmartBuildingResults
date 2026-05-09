@@ -1,4 +1,0 @@
-epoch_ns,event_type,detail
-1778142353977512487,gas_poll,checkGasFault
-1778142354266165149,gas_action,closeGasValve
-1778142354266351945,gas_action,cutPower
