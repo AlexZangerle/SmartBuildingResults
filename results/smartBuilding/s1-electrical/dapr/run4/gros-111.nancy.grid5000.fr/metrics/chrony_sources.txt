@@ -1,0 +1,18 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* fr.relay.mahi.be              2  10   377   246   +595us[ +617us] +/-   16ms
+^- pha75-3_migr-82-67-200-1>     3   9   377   112   +405us[ +405us] +/-   88ms
+^+ fr-par-s01.komogoto.com       3   9   377   638  -9890ns[  +10us] +/-   35ms
+^+ jnd-ouiheberg-fr              3   9   377   193   -331us[ -331us] +/-   17ms
+^- pve-1.luxembourg.grid500>     3   8   377    12  -6484ns[-6484ns] +/-  107ms
+^- pve-1.lille.grid5000.fr       3   8   377   205   +681us[ +681us] +/-   47ms
+^- pve-1.nancy.grid5000.fr       3   7   377    10   +269us[ +269us] +/-   75ms
