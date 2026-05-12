@@ -19,7 +19,7 @@ SERVICE_IMAGE = "alexzangerle/buildingservice-dapr-s3:latest"
 SIMULATION_IMAGE = "alexzangerle/simulation-dapr-s3:latest"
 COMPONENTS_PATH = "/tmp/dapr-components"
 LOCAL_ROOT = Path(f"./results/smartBuilding/{EXPERIMENT}/dapr")
-TIME_BEFORE_FETCH = 60 * 16
+TIME_BEFORE_FETCH = 60 * 17
 NUM_RUNS = 5
 START_TIME = None
 WALL_TIME = "03:00:00"
@@ -122,38 +122,6 @@ spec:
             a.copy(src="config/redis/components/", dest=COMPONENTS_PATH + "/")
 
         # Deploy containers
-        with en.actions(roles=roles["simulation"]) as a:
-            a.docker_container(
-                name="redis", image=REDIS_IMAGE, network_mode="host", state="started"
-            )
-            a.docker_container(
-                name="placement",
-                image=PLACEMENT_IMAGE,
-                network_mode="host",
-                state="started",
-                command=["./placement", "--port", "50006"],
-            )
-            a.docker_container(
-                name="simulation-sidecar",
-                image=SIDECAR_IMAGE,
-                network_mode="host",
-                state="started",
-                command=[
-                    "./daprd",
-                    "--app-id",
-                    "simulation",
-                    "--app-port",
-                    "3000",
-                    "--resources-path",
-                    "/components",
-                    "--placement-host-address",
-                    "localhost:50006",
-                    "--metrics-port",
-                    "9091",
-                ],
-                volumes=[f"{COMPONENTS_PATH}:/components"],
-            )
-
         with en.actions(roles=roles["occupancy"]) as a:
             a.docker_container(
                 name="building-service", image=SERVICE_IMAGE, network_mode="host", state="started", volumes=["/tmp/metrics:/metrics:rw"],
@@ -188,6 +156,39 @@ spec:
                 ],
                 volumes=[f"{COMPONENTS_PATH}:/components"],
             )
+
+        with en.actions(roles=roles["simulation"]) as a:
+            a.docker_container(
+                name="redis", image=REDIS_IMAGE, network_mode="host", state="started"
+            )
+            a.docker_container(
+                name="placement",
+                image=PLACEMENT_IMAGE,
+                network_mode="host",
+                state="started",
+                command=["./placement", "--port", "50006"],
+            )
+            a.docker_container(
+                name="simulation-sidecar",
+                image=SIDECAR_IMAGE,
+                network_mode="host",
+                state="started",
+                command=[
+                    "./daprd",
+                    "--app-id",
+                    "simulation",
+                    "--app-port",
+                    "3000",
+                    "--resources-path",
+                    "/components",
+                    "--placement-host-address",
+                    "localhost:50006",
+                    "--metrics-port",
+                    "9091",
+                ],
+                volumes=[f"{COMPONENTS_PATH}:/components"],
+            )
+
         
         with en.actions(roles=roles["lighting"]) as a:
             a.docker_container(
