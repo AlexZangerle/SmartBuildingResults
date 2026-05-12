@@ -1,0 +1,13 @@
+Reference ID    : 05C44C54 (fr.relay.mahi.be)
+Stratum         : 3
+Ref time (UTC)  : Mon May 11 08:25:38 2026
+System time     : 0.000010455 seconds slow of NTP time
+Last offset     : +0.000006285 seconds
+RMS offset      : 0.000038647 seconds
+Frequency       : 37.395 ppm slow
+Residual freq   : -0.000 ppm
+Skew            : 0.028 ppm
+Root delay      : 0.028334875 seconds
+Root dispersion : 0.001559704 seconds
+Update interval : 515.5 seconds
+Leap status     : Normal
