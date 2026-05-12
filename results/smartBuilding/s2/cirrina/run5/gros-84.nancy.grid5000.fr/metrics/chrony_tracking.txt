@@ -1,0 +1,13 @@
+Reference ID    : 52433E3E (mut38-1_migr-82-67-62-62.fbx.proxad.net)
+Stratum         : 2
+Ref time (UTC)  : Tue May 12 09:01:56 2026
+System time     : 0.000090998 seconds slow of NTP time
+Last offset     : +0.000022207 seconds
+RMS offset      : 0.000177514 seconds
+Frequency       : 34.440 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.030 ppm
+Root delay      : 0.020560931 seconds
+Root dispersion : 0.001148633 seconds
+Update interval : 520.2 seconds
+Leap status     : Normal
