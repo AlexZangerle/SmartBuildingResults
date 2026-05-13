@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- dns-v3.ns4v.icu               2   9   377     0  +1953us[+1953us] +/-   41ms
+^+ lfbn-rei-1-285-215.w86-2>     2   9   377   134   -314us[ -278us] +/-   17ms
+^- free.saclay.org               2   8   377   197   +512us[ +548us] +/-   27ms
+^* neel.ch                       1   9   377    65   +473us[ +510us] +/- 8382us

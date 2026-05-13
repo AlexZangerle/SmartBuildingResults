@@ -9,7 +9,7 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^- vil35-1_migr-82-67-117-1>     2   8   377     4  +3813us[+3813us] +/-   47ms
-^+ op.success.ovh                4   9   377   461   +132us[ +105us] +/-   13ms
-^+ 82-64-141-144.subs.proxa>     2   9   377   202  -2138us[-2171us] +/-   28ms
-^* mut38-1_migr-82-67-62-62>     1   9   377     6   +192us[ +155us] +/-   10ms
+^- dns-v3.ns4v.icu               2   9   377    65   +475us[ +475us] +/-   47ms
+^* neel.ch                       1   9   377   388   +239us[ +256us] +/- 8332us
+^- free.saclay.org               2   9   377   453   +589us[ +606us] +/-   40ms
+^+ lfbn-rei-1-285-215.w86-2>     2   9   377   327   +232us[ +232us] +/-   18ms

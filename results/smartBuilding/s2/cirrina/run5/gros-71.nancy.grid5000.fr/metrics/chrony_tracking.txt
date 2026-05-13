@@ -1,13 +1,13 @@
-Reference ID    : 52433E3E (mut38-1_migr-82-67-62-62.fbx.proxad.net)
+Reference ID    : 4F8FFA21 (neel.ch)
 Stratum         : 2
-Ref time (UTC)  : Tue May 12 08:57:29 2026
-System time     : 0.000089925 seconds slow of NTP time
-Last offset     : -0.000010074 seconds
-RMS offset      : 0.000265025 seconds
+Ref time (UTC)  : Wed May 13 10:12:33 2026
+System time     : 0.000019308 seconds fast of NTP time
+Last offset     : +0.000018771 seconds
+RMS offset      : 0.000083327 seconds
 Frequency       : 36.965 ppm slow
-Residual freq   : -0.001 ppm
-Skew            : 0.054 ppm
-Root delay      : 0.020665437 seconds
-Root dispersion : 0.001158378 seconds
-Update interval : 512.3 seconds
+Residual freq   : +0.002 ppm
+Skew            : 0.067 ppm
+Root delay      : 0.016205311 seconds
+Root dispersion : 0.001047119 seconds
+Update interval : 520.7 seconds
 Leap status     : Normal
