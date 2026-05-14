@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ orfeo.duckcorp.org            2   9   377   370  +1796us[+1830us] +/-   16ms
+^- ciran28.fr                    3   6   377    48   -753us[ -753us] +/-   49ms
+^* neel.ch                       1   9   377   253   -346us[ -312us] +/- 8222us
+^+ lfbn-rei-1-285-215.w86-2>     2   9   377   178   -924us[ -924us] +/-   16ms

@@ -1,0 +1,13 @@
+Reference ID    : 4F8FFA21 (neel.ch)
+Stratum         : 2
+Ref time (UTC)  : Wed May 13 13:26:18 2026
+System time     : 0.000020717 seconds slow of NTP time
+Last offset     : -0.000090714 seconds
+RMS offset      : 0.000076220 seconds
+Frequency       : 37.456 ppm slow
+Residual freq   : -0.002 ppm
+Skew            : 0.041 ppm
+Root delay      : 0.016292538 seconds
+Root dispersion : 0.000656255 seconds
+Update interval : 1035.4 seconds
+Leap status     : Normal
