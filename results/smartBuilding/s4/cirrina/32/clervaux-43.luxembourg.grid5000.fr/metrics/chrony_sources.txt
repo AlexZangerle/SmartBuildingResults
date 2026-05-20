@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* mne69-1_migr-82-67-15-56>     2  10   377   361   +109us[  +83us] +/-   32ms
+^+ 172-234-184-36.ip.linode>     2  10   377   768   -185us[ -212us] +/-   48ms
+^- router-ix5.servme.network     3  10   377   770   +694us[ +667us] +/-  964ms
+^- wan.jazilos.fr                2   8   375    26   +547us[ +547us] +/-   36ms

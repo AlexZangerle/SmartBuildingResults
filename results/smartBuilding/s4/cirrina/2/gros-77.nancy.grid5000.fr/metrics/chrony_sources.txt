@@ -9,7 +9,7 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^- 82-64-141-144.subs.proxa>     2   7   377    70  -2279us[-2303us] +/-   28ms
-^? 2607:ff68:14:11::e539:b0>     0   8     0     -     +0ns[   +0ns] +/-    0ns
-^* amy.chl.la                    2   6   377    13    +65us[  +37us] +/-   11ms
-^- ntp2.omdc.pl                  2   7   377    80   -546us[ -588us] +/-   49ms
+^- vil35-1_migr-82-67-117-1>     2   7   377    25   +390us[ +390us] +/-   56ms
+^- wan.jazilos.fr                2   7   166   345  +1182us[ +893us] +/-   24ms
+^+ 82-64-173-137.subs.proxa>     4   7   377    25   -903us[ -903us] +/-   26ms
+^* silas.dioptre.fr              2   7   377    85   +816us[ +740us] +/-   50ms

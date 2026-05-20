@@ -1,0 +1,13 @@
+Reference ID    : 52402AB9 (ntp.orlinum.fr)
+Stratum         : 2
+Ref time (UTC)  : Wed May 20 11:38:30 2026
+System time     : 0.000000751 seconds fast of NTP time
+Last offset     : +0.000000605 seconds
+RMS offset      : 0.000681198 seconds
+Frequency       : 37.722 ppm slow
+Residual freq   : -0.061 ppm
+Skew            : 0.271 ppm
+Root delay      : 0.012801962 seconds
+Root dispersion : 0.000285972 seconds
+Update interval : 259.9 seconds
+Leap status     : Normal

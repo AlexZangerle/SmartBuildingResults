@@ -1,13 +1,13 @@
-Reference ID    : 5241F838 (82-65-248-56.subs.proxad.net)
-Stratum         : 2
-Ref time (UTC)  : Tue May 19 13:03:37 2026
-System time     : 0.005077964 seconds slow of NTP time
-Last offset     : -0.005782917 seconds
-RMS offset      : 0.005672965 seconds
-Frequency       : 4.642 ppm slow
-Residual freq   : -28.616 ppm
-Skew            : 75.996 ppm
-Root delay      : 0.024153683 seconds
-Root dispersion : 0.009118536 seconds
-Update interval : 64.4 seconds
+Reference ID    : 5242353C (wan.jazilos.fr)
+Stratum         : 3
+Ref time (UTC)  : Wed May 20 10:08:33 2026
+System time     : 0.000145336 seconds fast of NTP time
+Last offset     : +0.000057580 seconds
+RMS offset      : 0.000210465 seconds
+Frequency       : 36.770 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.088 ppm
+Root delay      : 0.020392451 seconds
+Root dispersion : 0.005981199 seconds
+Update interval : 64.1 seconds
 Leap status     : Normal

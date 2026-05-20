@@ -1,13 +1,13 @@
-Reference ID    : 334B11DB (amy.chl.la)
+Reference ID    : 05275033 (silas.dioptre.fr)
 Stratum         : 3
-Ref time (UTC)  : Tue May 19 13:03:40 2026
-System time     : 0.000039738 seconds slow of NTP time
-Last offset     : -0.000028362 seconds
-RMS offset      : 0.001376489 seconds
-Frequency       : 40.120 ppm slow
-Residual freq   : -0.057 ppm
-Skew            : 0.593 ppm
-Root delay      : 0.021064056 seconds
-Root dispersion : 0.000713596 seconds
-Update interval : 64.3 seconds
+Ref time (UTC)  : Wed May 20 10:07:36 2026
+System time     : 0.000152596 seconds slow of NTP time
+Last offset     : -0.000076085 seconds
+RMS offset      : 0.000571658 seconds
+Frequency       : 40.234 ppm slow
+Residual freq   : -0.005 ppm
+Skew            : 0.139 ppm
+Root delay      : 0.024997890 seconds
+Root dispersion : 0.017795401 seconds
+Update interval : 129.4 seconds
 Leap status     : Normal

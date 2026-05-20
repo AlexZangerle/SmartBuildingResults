@@ -1,0 +1,13 @@
+Reference ID    : A29FC801 (time.cloudflare.com)
+Stratum         : 4
+Ref time (UTC)  : Wed May 20 10:25:35 2026
+System time     : 0.000001186 seconds slow of NTP time
+Last offset     : -0.000040456 seconds
+RMS offset      : 0.000060256 seconds
+Frequency       : 1.050 ppm slow
+Residual freq   : -0.002 ppm
+Skew            : 0.087 ppm
+Root delay      : 0.025911504 seconds
+Root dispersion : 0.000678081 seconds
+Update interval : 260.5 seconds
+Leap status     : Normal

@@ -1,13 +1,13 @@
-Reference ID    : 334B11DB (amy.chl.la)
-Stratum         : 3
-Ref time (UTC)  : Tue May 19 13:20:12 2026
-System time     : 0.003644325 seconds fast of NTP time
-Last offset     : +0.000671620 seconds
-RMS offset      : 0.003585420 seconds
-Frequency       : 40.856 ppm slow
-Residual freq   : +0.000 ppm
-Skew            : 0.066 ppm
-Root delay      : 0.021126630 seconds
-Root dispersion : 0.000484280 seconds
-Update interval : 258.8 seconds
+Reference ID    : 5240AD89 (82-64-173-137.subs.proxad.net)
+Stratum         : 5
+Ref time (UTC)  : Wed May 20 10:16:08 2026
+System time     : 0.000165689 seconds fast of NTP time
+Last offset     : +0.000084376 seconds
+RMS offset      : 0.000169685 seconds
+Frequency       : 40.572 ppm slow
+Residual freq   : +0.032 ppm
+Skew            : 0.372 ppm
+Root delay      : 0.051924210 seconds
+Root dispersion : 0.001794860 seconds
+Update interval : 258.4 seconds
 Leap status     : Normal

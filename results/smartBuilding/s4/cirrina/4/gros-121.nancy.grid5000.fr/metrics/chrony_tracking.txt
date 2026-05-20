@@ -1,0 +1,13 @@
+Reference ID    : 5242353C (wan.jazilos.fr)
+Stratum         : 3
+Ref time (UTC)  : Wed May 20 10:14:19 2026
+System time     : 0.000000039 seconds slow of NTP time
+Last offset     : +0.000064643 seconds
+RMS offset      : 0.000927664 seconds
+Frequency       : 37.303 ppm slow
+Residual freq   : +0.003 ppm
+Skew            : 0.101 ppm
+Root delay      : 0.020849885 seconds
+Root dispersion : 0.007150309 seconds
+Update interval : 130.0 seconds
+Leap status     : Normal

@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ vil35-1_migr-82-67-117-1>     2  10   377   366   +385us[ +383us] +/-   64ms
+^+ silas.dioptre.fr              2  10   377   702   +307us[ +356us] +/-   46ms
+^+ 82-64-173-137.subs.proxa>     4  10   377    61   -854us[ -854us] +/-   27ms
+^* wan.jazilos.fr                2   8   233   224   +467us[ +466us] +/-   41ms

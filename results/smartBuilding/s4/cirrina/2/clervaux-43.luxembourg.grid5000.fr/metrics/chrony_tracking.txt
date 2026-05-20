@@ -1,0 +1,13 @@
+Reference ID    : 52430F38 (mne69-1_migr-82-67-15-56.fbx.proxad.net)
+Stratum         : 3
+Ref time (UTC)  : Wed May 20 09:57:35 2026
+System time     : 0.000006709 seconds slow of NTP time
+Last offset     : +0.000035880 seconds
+RMS offset      : 0.000105396 seconds
+Frequency       : 8.392 ppm slow
+Residual freq   : +0.015 ppm
+Skew            : 0.274 ppm
+Root delay      : 0.043473553 seconds
+Root dispersion : 0.006454032 seconds
+Update interval : 65.3 seconds
+Leap status     : Normal

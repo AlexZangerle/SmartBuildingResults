@@ -1,0 +1,13 @@
+Reference ID    : 05275033 (silas.dioptre.fr)
+Stratum         : 3
+Ref time (UTC)  : Wed May 20 10:08:40 2026
+System time     : 0.000473181 seconds fast of NTP time
+Last offset     : +0.000149380 seconds
+RMS offset      : 0.000409611 seconds
+Frequency       : 39.836 ppm slow
+Residual freq   : +0.002 ppm
+Skew            : 0.144 ppm
+Root delay      : 0.024615958 seconds
+Root dispersion : 0.016865529 seconds
+Update interval : 128.7 seconds
+Leap status     : Normal

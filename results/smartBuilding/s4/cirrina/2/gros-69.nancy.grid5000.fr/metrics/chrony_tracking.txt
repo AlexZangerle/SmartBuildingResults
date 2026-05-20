@@ -1,0 +1,13 @@
+Reference ID    : 2D8CA435 (jnd-ouiheberg-fr)
+Stratum         : 4
+Ref time (UTC)  : Wed May 20 10:07:31 2026
+System time     : 0.000123394 seconds fast of NTP time
+Last offset     : +0.000005450 seconds
+RMS offset      : 0.000649928 seconds
+Frequency       : 41.604 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.097 ppm
+Root delay      : 0.033070758 seconds
+Root dispersion : 0.000451070 seconds
+Update interval : 130.6 seconds
+Leap status     : Normal

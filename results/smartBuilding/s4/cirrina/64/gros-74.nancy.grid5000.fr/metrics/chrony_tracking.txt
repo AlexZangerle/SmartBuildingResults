@@ -1,13 +1,13 @@
-Reference ID    : 334B11DB (amy.chl.la)
+Reference ID    : 5242353C (wan.jazilos.fr)
 Stratum         : 3
-Ref time (UTC)  : Tue May 19 14:24:41 2026
-System time     : 0.001230027 seconds fast of NTP time
-Last offset     : -0.001584919 seconds
-RMS offset      : 0.004445824 seconds
-Frequency       : 40.817 ppm slow
-Residual freq   : -0.001 ppm
-Skew            : 0.021 ppm
-Root delay      : 0.021126630 seconds
-Root dispersion : 0.001121781 seconds
-Update interval : 514.2 seconds
+Ref time (UTC)  : Wed May 20 11:38:12 2026
+System time     : 0.000019022 seconds fast of NTP time
+Last offset     : +0.000061615 seconds
+RMS offset      : 0.000094815 seconds
+Frequency       : 40.728 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.047 ppm
+Root delay      : 0.020389143 seconds
+Root dispersion : 0.008283048 seconds
+Update interval : 516.1 seconds
 Leap status     : Normal
