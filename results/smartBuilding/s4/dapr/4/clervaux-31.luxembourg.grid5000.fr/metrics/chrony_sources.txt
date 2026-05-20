@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? vps-fra2.orleans.ddnss.de     0   9     0     -     +0ns[   +0ns] +/-    0ns
+^- 82-64-173-137.subs.proxa>     2   8   377   143  -6261us[-6392us] +/-   45ms
+^* put92-2_migr-82-66-40-79>     1   8   377    20  -1834us[-1997us] +/-   26ms
+^+ 172-232-44-156.ip.linode>     2   6   377    22  +2364us[+2201us] +/-   36ms

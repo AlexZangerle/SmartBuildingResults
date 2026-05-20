@@ -1,0 +1,13 @@
+Reference ID    : 334B11DB (amy.chl.la)
+Stratum         : 3
+Ref time (UTC)  : Tue May 19 14:37:57 2026
+System time     : 0.000071228 seconds slow of NTP time
+Last offset     : +0.000019346 seconds
+RMS offset      : 0.000881548 seconds
+Frequency       : 41.790 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.035 ppm
+Root delay      : 0.021089852 seconds
+Root dispersion : 0.000405585 seconds
+Update interval : 259.7 seconds
+Leap status     : Normal

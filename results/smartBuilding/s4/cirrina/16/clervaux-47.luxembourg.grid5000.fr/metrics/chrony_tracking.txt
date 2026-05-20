@@ -1,0 +1,13 @@
+Reference ID    : 253B3F7D (37.59.63.125)
+Stratum         : 3
+Ref time (UTC)  : Tue May 19 13:51:03 2026
+System time     : 0.000018297 seconds slow of NTP time
+Last offset     : -0.000026135 seconds
+RMS offset      : 0.002893008 seconds
+Frequency       : 4.423 ppm slow
+Residual freq   : -0.003 ppm
+Skew            : 0.080 ppm
+Root delay      : 0.047387250 seconds
+Root dispersion : 0.001035394 seconds
+Update interval : 1037.3 seconds
+Leap status     : Normal

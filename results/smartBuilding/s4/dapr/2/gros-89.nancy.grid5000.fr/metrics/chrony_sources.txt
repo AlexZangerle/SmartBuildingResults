@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* amy.chl.la                    2   7   377    73  -3003us[-4697us] +/-   12ms
+^- 82-64-141-144.subs.proxa>     2   8   377    68  -3856us[-3856us] +/-   26ms
+^- ntp2.omdc.pl                  2   8   377    11  -3602us[-3602us] +/-   53ms
+^+ 82-65-248-56.subs.proxad>     1   6   377     9  -7843us[-7843us] +/-   16ms

@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- free.saclay.org               2   8   177    17   +447us[ +447us] +/-   47ms
+^* amy.chl.la                    2   8   377   605  -4366ns[  -11us] +/-   11ms
+^- ntp2.omdc.pl                  2   9   377   405   +474us[ +474us] +/-   46ms
+^- 82-65-248-56.subs.proxad>     1   6   377    15  -6085us[-6085us] +/-   11ms

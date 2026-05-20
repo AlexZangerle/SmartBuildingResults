@@ -1,0 +1,13 @@
+Reference ID    : B01FB4CD (aragorn.groumpf.org)
+Stratum         : 3
+Ref time (UTC)  : Tue May 19 14:24:12 2026
+System time     : 0.000049321 seconds slow of NTP time
+Last offset     : -0.000002112 seconds
+RMS offset      : 0.001678318 seconds
+Frequency       : 1.207 ppm slow
+Residual freq   : -0.003 ppm
+Skew            : 0.073 ppm
+Root delay      : 0.021098601 seconds
+Root dispersion : 0.002078743 seconds
+Update interval : 1043.3 seconds
+Leap status     : Normal

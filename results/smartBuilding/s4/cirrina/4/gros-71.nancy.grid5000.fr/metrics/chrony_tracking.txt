@@ -1,0 +1,13 @@
+Reference ID    : 5241F838 (82-65-248-56.subs.proxad.net)
+Stratum         : 2
+Ref time (UTC)  : Tue May 19 13:21:59 2026
+System time     : 0.000543507 seconds slow of NTP time
+Last offset     : -0.000551526 seconds
+RMS offset      : 0.004616496 seconds
+Frequency       : 36.999 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.867 ppm
+Root delay      : 0.027279783 seconds
+Root dispersion : 0.005880743 seconds
+Update interval : 64.4 seconds
+Leap status     : Normal

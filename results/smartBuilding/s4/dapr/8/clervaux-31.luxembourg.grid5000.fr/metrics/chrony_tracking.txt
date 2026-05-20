@@ -1,0 +1,13 @@
+Reference ID    : 5242284F (put92-2_migr-82-66-40-79.fbx.proxad.net)
+Stratum         : 2
+Ref time (UTC)  : Tue May 19 13:38:00 2026
+System time     : 0.000465702 seconds slow of NTP time
+Last offset     : -0.000285537 seconds
+RMS offset      : 0.004086054 seconds
+Frequency       : 4.447 ppm slow
+Residual freq   : -0.011 ppm
+Skew            : 0.475 ppm
+Root delay      : 0.045757920 seconds
+Root dispersion : 0.002686050 seconds
+Update interval : 515.9 seconds
+Leap status     : Normal
