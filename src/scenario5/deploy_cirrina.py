@@ -91,11 +91,20 @@ try:
 
     netem.add_constraints(
         src=roles["simulation"],
-        dest=roles["doorsNear"] + roles["doorsFar"],
+        dest=roles["doorsNear"],
         delay="10ms",
         rate="1gbit",
         symmetric=True,
     )
+
+    netem.add_constraints(
+        src=roles["simulation"],
+        dest=roles["doorsFar"],
+        delay="80ms",
+        rate="1gbit",
+        symmetric=True,
+    )
+
     netem.deploy()
 
     simulation_addr = roles["simulation"][0].address
