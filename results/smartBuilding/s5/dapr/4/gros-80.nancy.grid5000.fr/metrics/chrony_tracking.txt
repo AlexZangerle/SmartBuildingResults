@@ -1,0 +1,13 @@
+Reference ID    : 56E1EFD7 (lfbn-rei-1-285-215.w86-225.abo.wanadoo.fr)
+Stratum         : 3
+Ref time (UTC)  : Tue May 26 07:51:39 2026
+System time     : 0.000020178 seconds fast of NTP time
+Last offset     : +0.000000956 seconds
+RMS offset      : 0.000164410 seconds
+Frequency       : 37.499 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.260 ppm
+Root delay      : 0.029282916 seconds
+Root dispersion : 0.001418315 seconds
+Update interval : 259.8 seconds
+Leap status     : Normal

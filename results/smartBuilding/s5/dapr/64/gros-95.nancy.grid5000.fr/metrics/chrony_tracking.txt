@@ -1,0 +1,13 @@
+Reference ID    : 3ED281AB (62-210-129-171.rev.poneytelecom.eu)
+Stratum         : 3
+Ref time (UTC)  : Tue May 26 09:04:23 2026
+System time     : 0.000015402 seconds fast of NTP time
+Last offset     : -0.000005019 seconds
+RMS offset      : 0.000366447 seconds
+Frequency       : 36.855 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.059 ppm
+Root delay      : 0.013208899 seconds
+Root dispersion : 0.000922363 seconds
+Update interval : 259.7 seconds
+Leap status     : Normal

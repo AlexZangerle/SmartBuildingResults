@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- router-rbx-1.servme.netw>     2   8   377   167  +1718us[+1718us] +/-   49ms
+^- sys.gegeweb.eu                2   8    77   156   -441us[ -441us] +/-   64ms
+^* lfbn-rei-1-285-215.w86-2>     2   9   377   491   +440us[ +623us] +/-   16ms
+^- fr-par-s01.komogoto.com       3   9   377    40  +1034us[+1034us] +/-   49ms
