@@ -9,7 +9,7 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^- op.success.ovh                4   6   377    21   -882us[ -882us] +/-   15ms
-^+ router-rbx-1.servme.netw>     2   9   377   290   +890us[ +954us] +/-   44ms
-^* lfbn-rei-1-285-215.w86-2>     2   8   377   155    -65us[  +44us] +/-   15ms
-^+ fr-par-s01.komogoto.com       3   8   377   225    +40us[ +126us] +/-   42ms
+^* 200-177-190-109.dsl.ovh.>     2   8   377   190    +89us[ +120us] +/-   10ms
+^- 172-233-248-179.ip.linod>     2   6   377     0  +5358us[+5358us] +/-   25ms
+^+ meshflow.net                  3   9   377   124    +10us[  +10us] +/-   11ms
+^- mne69-1_migr-82-67-15-56>     2   8   107    45    -99us[  -99us] +/-   19ms

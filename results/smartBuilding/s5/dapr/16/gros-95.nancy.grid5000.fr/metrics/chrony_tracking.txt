@@ -1,13 +1,13 @@
-Reference ID    : 3ED281AB (62-210-129-171.rev.poneytelecom.eu)
+Reference ID    : 6DBEB1C8 (200-177-190-109.dsl.ovh.fr)
 Stratum         : 3
-Ref time (UTC)  : Tue May 26 08:34:07 2026
-System time     : 0.000017091 seconds fast of NTP time
-Last offset     : +0.000007224 seconds
-RMS offset      : 0.000529513 seconds
-Frequency       : 36.886 ppm slow
-Residual freq   : +0.001 ppm
-Skew            : 0.114 ppm
-Root delay      : 0.013232582 seconds
-Root dispersion : 0.000537211 seconds
-Update interval : 261.1 seconds
+Ref time (UTC)  : Tue May 26 13:16:05 2026
+System time     : 0.000012410 seconds slow of NTP time
+Last offset     : +0.000054935 seconds
+RMS offset      : 0.000653815 seconds
+Frequency       : 36.874 ppm slow
+Residual freq   : +0.003 ppm
+Skew            : 0.052 ppm
+Root delay      : 0.019264007 seconds
+Root dispersion : 0.001070661 seconds
+Update interval : 517.9 seconds
 Leap status     : Normal

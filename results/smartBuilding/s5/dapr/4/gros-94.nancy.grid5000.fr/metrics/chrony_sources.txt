@@ -9,11 +9,11 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 2001:41d0:8:9233::1           0   9     0     -     +0ns[   +0ns] +/-    0ns
-^? 2a01:e0a:fc:9551::3:9         0   9     0     -     +0ns[   +0ns] +/-    0ns
-^? any.time.nl                   0   9     0     -     +0ns[   +0ns] +/-    0ns
-^- fr-par-s01.komogoto.com       3   8   377   250   +188us[ +396us] +/-   51ms
+^? time.cloudflare.com           0   9     0     -     +0ns[   +0ns] +/-    0ns
+^* 200-177-190-109.dsl.ovh.>     2   9   377   306    -60us[  -70us] +/- 9708us
+^? grv.as60391.net               0   9     0     -     +0ns[   +0ns] +/-    0ns
+^+ meshflow.net                  3   9   377   104   +191us[ +191us] +/-   11ms
+^? 2600:3c07::2000:c0ff:fe8>     0   9     0     -     +0ns[   +0ns] +/-    0ns
 ^? 2a01cb00129ea80300000000>     0   9     0     -     +0ns[   +0ns] +/-    0ns
-^* lfbn-rei-1-285-215.w86-2>     2   7   377   117    -66us[ -190us] +/-   15ms
-^- router-rbx-1.servme.netw>     2   8   377    53   +795us[ +795us] +/-   35ms
-^? vps-rtm1.orleans.ddnss.de     0   9     0     -     +0ns[   +0ns] +/-    0ns
+^? 2a01cb00129ea80300000000>     0   9     0     -     +0ns[   +0ns] +/-    0ns
+^- 172-233-248-179.ip.linod>     2   6   377    44  +5261us[+5261us] +/-   24ms

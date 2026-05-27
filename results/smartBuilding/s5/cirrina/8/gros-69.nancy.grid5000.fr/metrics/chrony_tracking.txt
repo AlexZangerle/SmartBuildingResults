@@ -1,0 +1,13 @@
+Reference ID    : 6DBEB1C8 (200-177-190-109.dsl.ovh.fr)
+Stratum         : 3
+Ref time (UTC)  : Tue May 26 13:06:50 2026
+System time     : 0.000009778 seconds fast of NTP time
+Last offset     : -0.000119454 seconds
+RMS offset      : 0.000482045 seconds
+Frequency       : 41.793 ppm slow
+Residual freq   : -0.003 ppm
+Skew            : 0.060 ppm
+Root delay      : 0.019324558 seconds
+Root dispersion : 0.000516264 seconds
+Update interval : 516.1 seconds
+Leap status     : Normal

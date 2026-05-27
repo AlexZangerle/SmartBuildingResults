@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ meshflow.net                  3   7   377   104   -829us[ -829us] +/-   11ms
+^+ 172-233-248-179.ip.linod>     2   6   377    42  +2223us[+2223us] +/-   25ms
+^+ 172-232-63-219.ip.linode>     2   7   377    33  +1414us[+1414us] +/-   26ms
+^* 200-177-190-109.dsl.ovh.>     2   8   377   235  -1087us[-1411us] +/- 9781us

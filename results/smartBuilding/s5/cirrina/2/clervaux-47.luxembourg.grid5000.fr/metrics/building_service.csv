@@ -1,0 +1,13 @@
+epoch_ns,event_type,detail
+1779797861865690957,fire_detected,Office
+1779797878869909603,fire_detected,ServerRoom
+1779797915875091533,fire_detected,Office
+1779797972885320141,fire_detected,ServerRoom
+1779798074904662342,fire_detected,ServerRoom
+1779798151919400246,fire_detected,Office
+1779798203926665976,fire_detected,Office
+1779798360955213886,fire_detected,ServerRoom
+1779798400961872239,fire_detected,ServerRoom
+1779798482978683303,fire_detected,ServerRoom
+1779798544990718389,fire_detected,Office
+1779798742023982977,fire_detected,ServerRoom

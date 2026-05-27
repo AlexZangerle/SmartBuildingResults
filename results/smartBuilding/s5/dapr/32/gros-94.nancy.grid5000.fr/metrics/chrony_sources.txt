@@ -9,11 +9,11 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^? 2001:41d0:8:9233::1           0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? 2a01:e0a:fc:9551::3:9         0  10     0     -     +0ns[   +0ns] +/-    0ns
-^? any.time.nl                   0  10     0     -     +0ns[   +0ns] +/-    0ns
-^+ fr-par-s01.komogoto.com       3   8   377   120   -576us[ -576us] +/-   51ms
-^? vps-fra8.orleans.ddnss.de     0  10     0     -     +0ns[   +0ns] +/-    0ns
-^* lfbn-rei-1-285-215.w86-2>     2   9   377   369   -252us[ -310us] +/-   16ms
-^+ router-rbx-1.servme.netw>     2   9   377   442  +1341us[+1290us] +/-   51ms
-^? vps-rtm1.orleans.ddnss.de     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? time.cloudflare.com           0  10     0     -     +0ns[   +0ns] +/-    0ns
+^* 200-177-190-109.dsl.ovh.>     2  10   377   957    -67us[  -50us] +/- 9738us
+^? grv.as60391.net               0  10     0     -     +0ns[   +0ns] +/-    0ns
+^+ meshflow.net                  3  10   377   740   +100us[ +100us] +/-   10ms
+^? 2600:3c07::2000:c0ff:fe8>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? 2a01cb00129ea80300000000>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^? 82-64-55-92.subs.proxad.>     0  10     0     -     +0ns[   +0ns] +/-    0ns
+^- 172-233-248-179.ip.linod>     2   6   377    41  +4485us[+4485us] +/-   26ms

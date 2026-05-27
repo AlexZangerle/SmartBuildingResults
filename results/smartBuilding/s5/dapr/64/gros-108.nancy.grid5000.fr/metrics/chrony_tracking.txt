@@ -1,13 +1,13 @@
-Reference ID    : 4F8FFA21 (neel.ch)
-Stratum         : 2
-Ref time (UTC)  : Tue May 26 09:03:59 2026
-System time     : 0.000012774 seconds fast of NTP time
-Last offset     : +0.000013837 seconds
-RMS offset      : 0.000245323 seconds
-Frequency       : 43.674 ppm slow
-Residual freq   : +0.000 ppm
-Skew            : 0.057 ppm
-Root delay      : 0.016012937 seconds
-Root dispersion : 0.000634182 seconds
-Update interval : 1043.6 seconds
+Reference ID    : 6DBEB1C8 (200-177-190-109.dsl.ovh.fr)
+Stratum         : 3
+Ref time (UTC)  : Tue May 26 13:55:31 2026
+System time     : 0.000134192 seconds fast of NTP time
+Last offset     : +0.000205090 seconds
+RMS offset      : 0.000269306 seconds
+Frequency       : 43.675 ppm slow
+Residual freq   : +0.001 ppm
+Skew            : 0.020 ppm
+Root delay      : 0.019321630 seconds
+Root dispersion : 0.000938492 seconds
+Update interval : 2070.7 seconds
 Leap status     : Normal

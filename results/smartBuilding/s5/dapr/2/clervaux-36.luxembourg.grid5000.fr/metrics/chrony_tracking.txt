@@ -1,0 +1,13 @@
+Reference ID    : 33442C1B (27.ip-51-68-44.eu)
+Stratum         : 5
+Ref time (UTC)  : Tue May 26 12:36:43 2026
+System time     : 0.000029976 seconds fast of NTP time
+Last offset     : -0.000000160 seconds
+RMS offset      : 0.000083165 seconds
+Frequency       : 5.380 ppm slow
+Residual freq   : -0.003 ppm
+Skew            : 0.047 ppm
+Root delay      : 0.050081387 seconds
+Root dispersion : 0.000475712 seconds
+Update interval : 64.9 seconds
+Leap status     : Normal
