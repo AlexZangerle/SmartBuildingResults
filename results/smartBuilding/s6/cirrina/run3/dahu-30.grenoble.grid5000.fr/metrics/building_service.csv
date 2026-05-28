@@ -1,0 +1,10 @@
+epoch_ns,event_type,detail
+1779970045736999867,elec_poll,checkArcFault
+1779970075677496298,elec_poll,checkArcFault
+1779970105678481836,elec_poll,checkArcFault
+1779970135682526079,elec_poll,checkArcFault
+1779970165678686675,elec_poll,checkArcFault
+1779970195680220095,elec_poll,checkArcFault
+1779970225681323796,elec_fault,Panel-B
+1779970225681405546,elec_poll,checkArcFault
+1779970225693726482,elec_action,tripCircuitBreaker

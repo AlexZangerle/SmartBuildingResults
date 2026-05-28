@@ -1,0 +1,3 @@
+epoch_ns,event_type,detail
+1779973828196441087,temp_high,65.0
+1779973828210299355,temp_action,highRisk

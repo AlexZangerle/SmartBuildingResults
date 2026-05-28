@@ -1,0 +1,6 @@
+epoch_ns,event_type,detail
+1779970053953431132,gas_poll,checkGasFault
+1779970083886080057,gas_fault,Zone-A
+1779970083886387125,gas_poll,checkGasFault
+1779970083904955159,gas_action,closeGasValve
+1779970083905007708,gas_action,cutPower

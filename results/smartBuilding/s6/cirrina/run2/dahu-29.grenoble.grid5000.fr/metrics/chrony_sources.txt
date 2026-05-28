@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ 193.42.63.23                  2   8   377   144  +2112us[+2140us] +/-   25ms
+^+ isere.sd.ysun.co              2   8   377    84  +3325us[+3340us] +/-   24ms
+^* mail.torrente.eu              2   6   377    18  -2223us[-2248us] +/-   13ms
+^- silas.dioptre.fr              2   7   377    19  -2342us[-2367us] +/-   49ms
