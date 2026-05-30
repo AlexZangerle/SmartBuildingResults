@@ -240,7 +240,10 @@ try:
                 name="simulation",
                 image=SIMULATION_IMAGE,
                 network_mode="host",
-                volumes=["/tmp/metrics:/metrics:rw"],
+                volumes=[
+                    "/tmp/metrics:/metrics:rw",
+                    "/tmp/zenoh.json5:/tmp/zenoh.json5:ro",
+                ],
                 state="started",
                 command=[
                     "--duration=900",
