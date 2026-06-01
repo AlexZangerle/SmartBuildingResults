@@ -1,0 +1,6 @@
+epoch_ns,event_type,detail
+1780307424778973606,door_open,Door 0
+1780307654875628191,door_close,Door 0
+1780307664904388826,door_open,Door 0
+1780307994844980268,door_close,Door 0
+1780308004870571210,door_open,Door 0

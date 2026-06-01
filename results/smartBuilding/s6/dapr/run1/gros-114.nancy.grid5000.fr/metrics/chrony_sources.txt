@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- main.arcanite.ch              2   7   377    73  +1173us[+1173us] +/-   49ms
+^- numenor.groumpf.org           2   6   377    10  +2989us[+2989us] +/-   59ms
+^+ 82-64-141-144.subs.proxa>     4   7   377    81  -1534us[-1534us] +/-   24ms
+^* op.success.ovh                4   7   377    85   +634us[ +618us] +/-   14ms

@@ -1,0 +1,4 @@
+epoch_ns,event_type,detail
+1780303090835849594,security,doorLock:unlock
+1780303105814463534,security,doorLock:unlock
+1780303108244212027,security,doorLock:unlock

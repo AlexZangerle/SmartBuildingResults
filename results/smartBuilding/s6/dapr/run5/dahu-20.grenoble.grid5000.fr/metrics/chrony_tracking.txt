@@ -1,0 +1,13 @@
+Reference ID    : 52402D32 (82-64-45-50.subs.proxad.net)
+Stratum         : 2
+Ref time (UTC)  : Mon Jun 01 10:12:17 2026
+System time     : 0.000146139 seconds slow of NTP time
+Last offset     : -0.000114422 seconds
+RMS offset      : 0.000079107 seconds
+Frequency       : 4.197 ppm fast
+Residual freq   : -0.004 ppm
+Skew            : 0.050 ppm
+Root delay      : 0.022915127 seconds
+Root dispersion : 0.000329181 seconds
+Update interval : 1041.9 seconds
+Leap status     : Normal

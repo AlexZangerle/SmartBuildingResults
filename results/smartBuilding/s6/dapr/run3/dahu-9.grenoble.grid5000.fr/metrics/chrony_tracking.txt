@@ -1,13 +1,13 @@
-Reference ID    : 339F3581 (mail.torrente.eu)
-Stratum         : 3
-Ref time (UTC)  : Thu May 28 12:30:05 2026
-System time     : 0.000621206 seconds slow of NTP time
-Last offset     : -0.000932327 seconds
-RMS offset      : 0.000303972 seconds
-Frequency       : 1.833 ppm slow
-Residual freq   : -0.001 ppm
-Skew            : 0.042 ppm
-Root delay      : 0.023897082 seconds
-Root dispersion : 0.000294755 seconds
-Update interval : 130.2 seconds
+Reference ID    : 52402D32 (82-64-45-50.subs.proxad.net)
+Stratum         : 2
+Ref time (UTC)  : Mon Jun 01 09:29:26 2026
+System time     : 0.000022322 seconds fast of NTP time
+Last offset     : +0.000021586 seconds
+RMS offset      : 0.000050281 seconds
+Frequency       : 1.862 ppm slow
+Residual freq   : +0.004 ppm
+Skew            : 0.071 ppm
+Root delay      : 0.022730675 seconds
+Root dispersion : 0.000528408 seconds
+Update interval : 513.6 seconds
 Leap status     : Normal

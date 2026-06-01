@@ -1,0 +1,13 @@
+Reference ID    : 1F3A66A4 (164-102-58-31.static.reverse.lstn.net)
+Stratum         : 3
+Ref time (UTC)  : Mon Jun 01 09:55:03 2026
+System time     : 0.000263715 seconds slow of NTP time
+Last offset     : +0.000113653 seconds
+RMS offset      : 0.000263625 seconds
+Frequency       : 0.809 ppm slow
+Residual freq   : -0.001 ppm
+Skew            : 0.042 ppm
+Root delay      : 0.023383602 seconds
+Root dispersion : 0.000265922 seconds
+Update interval : 1039.9 seconds
+Leap status     : Normal

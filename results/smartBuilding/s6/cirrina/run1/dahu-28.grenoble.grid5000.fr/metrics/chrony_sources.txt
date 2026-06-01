@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- pha75-3_migr-82-67-200-1>     3   7   377    82   +316us[ +343us] +/-   90ms
+^+ jnd-ouiheberg-fr              3   7   377    18   -210us[ -210us] +/-   18ms
+^* 109.190.177.205               1   7   377    20    +93us[ +120us] +/-   10ms
+^+ 200-177-190-109.dsl.ovh.>     2   6   377    19   +134us[ +134us] +/-   11ms

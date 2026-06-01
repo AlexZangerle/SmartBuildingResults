@@ -9,7 +9,7 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ isere.sd.ysun.co              2   8   377    80  +4862us[+4960us] +/-   25ms
-^+ silas.dioptre.fr              2   8   377    20  -1968us[-1871us] +/-   49ms
-^+ 193.42.63.23                  2   8   377   153   +745us[ +754us] +/-   23ms
-^* mail.torrente.eu              2   6   377    17  -1909us[-1811us] +/-   13ms
+^+ 200-177-190-109.dsl.ovh.>     2   8   377    71   +168us[ +168us] +/-   11ms
+^- pha75-3_migr-82-67-200-1>     3   8   377    70   +261us[ +261us] +/-   71ms
+^+ jnd-ouiheberg-fr              3   8   377    66   -189us[ -189us] +/-   18ms
+^* 109.190.177.205               1   8   377    72    +95us[  +89us] +/-   10ms

@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- ns3161189.ip-51-91-67.eu      3  10   377   435   +574us[ +430us] +/-   65ms
+^* 200-177-190-109.dsl.ovh.>     2   8   377   104    -63us[ -163us] +/-   11ms
+^- de.ntp.zattarasrl.it          2  10   377   417   -105us[ -251us] +/-  107ms
+^- dns-v3.ns4v.icu               2  10   377   177  +1516us[+1422us] +/-   41ms

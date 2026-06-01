@@ -1,0 +1,13 @@
+Reference ID    : 36267222 (op.success.ovh)
+Stratum         : 5
+Ref time (UTC)  : Mon Jun 01 10:00:57 2026
+System time     : 0.000008836 seconds fast of NTP time
+Last offset     : -0.000005823 seconds
+RMS offset      : 0.000090639 seconds
+Frequency       : 39.930 ppm slow
+Residual freq   : -0.001 ppm
+Skew            : 0.023 ppm
+Root delay      : 0.025636669 seconds
+Root dispersion : 0.001669158 seconds
+Update interval : 1026.5 seconds
+Leap status     : Normal

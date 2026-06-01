@@ -9,7 +9,7 @@
 ||                                 |    |           \
 MS Name/IP address         Stratum Poll Reach LastRx Last sample               
 ===============================================================================
-^+ 193.42.63.23                  2  10   377   268  +2687us[+2672us] +/-   25ms
-^+ isere.sd.ysun.co              2   7   377     8  +1887us[+1887us] +/-   22ms
-^* mail.torrente.eu              2  10   377    26  -1404us[-1418us] +/-   13ms
-^- silas.dioptre.fr              2   8   377    88  -1472us[-1487us] +/-   63ms
+^+ 82-64-45-50.subs.proxad.>     1   9   377   354    -92us[  -92us] +/-   11ms
+^- miosweb.nohost.me             2  10   377   508   -396us[ -396us] +/-   43ms
+^+ vps1.websters-computers.>     2   9   377   226   -264us[ -264us] +/-   12ms
+^* 37.59.63.125                  2  10   377   674    +48us[  +13us] +/-   11ms

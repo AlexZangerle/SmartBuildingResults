@@ -1,0 +1,5 @@
+epoch_ns,event_type,detail
+1780303014146114428,hvac,off (Room 0)
+1780303086504225311,hvac,fan (Room 0)
+1780303105812714193,hvac,off (Room 0)
+1780303108247848864,hvac,off (Room 0)

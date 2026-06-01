@@ -1,0 +1,15 @@
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ 200-177-190-109.dsl.ovh.>     2   9   377   493    -45us[  -45us] +/-   11ms
+^* dns.freewebworld.fr           1  10   377  1013    +28us[ +307us] +/-   10ms
+^- mail.vincennesvolleyclub>     3   6   377    42  +8044us[+8044us] +/-   53ms
+^- 82-64-55-167.subs.proxad>     2   7   377    38   +290us[ +290us] +/-   44ms

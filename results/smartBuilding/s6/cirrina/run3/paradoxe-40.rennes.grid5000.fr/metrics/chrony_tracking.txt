@@ -1,0 +1,13 @@
+Reference ID    : 6DBEB1CB (dns.freewebworld.fr)
+Stratum         : 2
+Ref time (UTC)  : Mon Jun 01 09:23:09 2026
+System time     : 0.000043565 seconds fast of NTP time
+Last offset     : +0.000057424 seconds
+RMS offset      : 0.000095497 seconds
+Frequency       : 19.029 ppm slow
+Residual freq   : +0.006 ppm
+Skew            : 0.079 ppm
+Root delay      : 0.020210531 seconds
+Root dispersion : 0.000558801 seconds
+Update interval : 520.2 seconds
+Leap status     : Normal
