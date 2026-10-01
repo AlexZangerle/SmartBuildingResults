@@ -3,7 +3,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
-matplotlib.use("Agg")
+matplotlib.use("Qt5Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -70,6 +70,8 @@ ax.set_xlabel("")
 ax.set_title("S2 — Service Invoke Time")
 ax.grid(True, linestyle="--", alpha=0.5)
 plt.tight_layout()
+plt.show()
+
 
 output_path = f"figure/{EXPERIMENT}"
 os.makedirs(output_path, exist_ok=True)
