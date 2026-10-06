@@ -2,15 +2,14 @@ import os
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import seaborn as sns
 
-plt.rcParams.update({"font.size": 16})
-sns.set_theme(style="whitegrid", font_scale=1.2)
+plt.rcParams.update({"font.size": 14})
 
 EXPERIMENT = "s4"
 systems = {"cirrina": "Cirrina", "dapr": "Dapr"}
@@ -24,6 +23,7 @@ if not root.exists():
     print(f"Warning: Root directory does not exist: {root.resolve()}")
 
 BS_COLUMNS = ["epoch_ns", "event_type", "detail"]
+
 
 def read_building_service(path):
     """Read building_service.csv, handling missing headers."""
@@ -39,8 +39,9 @@ def read_building_service(path):
         pass
     return pd.DataFrame()
 
+
 # ==========================================
-# 1. Load Data for all 4 Subplots (S4)
+# 1. Load Data for all 4 Subplots
 # ==========================================
 
 # (a) Convergence Time Data
@@ -193,84 +194,144 @@ for sys_key, sys_label in systems.items():
 df_propagation = pd.DataFrame(propagation_records)
 
 # ==========================================
-# 2. Build 2x2 Subplot Figure (Matched with target style)
+# 2. Build 2x2 Subplot Figure (Pure Matplotlib style matching s1-gas)
 # ==========================================
 
-cmap = plt.get_cmap("Set1")
-output_path = Path("figure") / EXPERIMENT
-output_path.mkdir(parents=True, exist_ok=True)
-
-fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(10, 7))
+fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(14, 8))
 axes = axes.flatten()
 
-configs = [
-    (df_convergence, "Convergence Time (ms)", "(a) Convergence Time", "convergence_time"),
-    (df_latency, "Latency (ms)", "(b) Event Latency", "event_latency"),
-    (df_invoke, "Invoke Time (ms)", "(c) Service Invoke Time", "invoke_time"),
-    (df_propagation, "Propagation Time (ms)", "(d) Propagation Time", "propagation_time"),
+# Custom RGBA Hex Colors
+colors = [
+    "#33B24C80",
+    "#4C4C9980",
+    "#801ACC80",
+    "#E6998080",
 ]
 
-labels = ["Convergence Time (ms)", "Event Latency (ms)", "Service Invoke Time (ms)", "Propagation Time (ms)"]
+labels = list(systems.values())
 
-for idx, (ax, (df, y_col, title, filename_prefix)) in enumerate(zip(axes, configs)):
+# Properties to render small orange dots for outliers
+flier_props = dict(
+    marker="o",
+    markerfacecolor="orange",
+    markeredgecolor="orange",
+    markersize=3,
+    alpha=0.7,
+)
+
+configs = [
+    (df_convergence, "Convergence Time (ms)", "(a) Convergence Time", True),
+    (df_latency, "Latency (ms)", "(b) Event Latency", False),
+    (df_invoke, "Invoke Time (ms)", "(c) Service Invoke Time", False),
+    (df_propagation, "Propagation Time (ms)", "(d) Propagation Time", True),
+]
+
+for ax, (df, y_col, title, is_line) in zip(axes, configs):
     if not df.empty:
-        # Check if it's convergence or propagation (line plots) vs latency or invoke (box/errorbar or line)
-        # The user reference template uses errorbar/line plots with cmap and error bars or standard line plots with fill_between.
-        # Let's use the errorbar or line style matching the smartfactory reference code.
-        for i, (sys_key, sys_label) in enumerate(systems.items()):
-            sub = df[df["System"] == sys_label]
-            if sub.empty:
-                continue
-            grouped = sub.groupby("Sensors")[y_col]
-            means = grouped.mean()
-            stds = grouped.std().fillna(0)
+        if is_line:
+            line_colors = {"Cirrina": "#33B24C", "Dapr": "#4C4C99"}
+            for sys_label, color in line_colors.items():
+                sub = df[df["System"] == sys_label]
+                if sub.empty:
+                    continue
+                grouped = sub.groupby("Sensors")[y_col]
+                means = grouped.mean()
+                stds = grouped.std().fillna(0)
+                ax.plot(means.index, means.values, "o-", color=color, label=sys_label, linewidth=2, markersize=6,
+                        zorder=3)
+                ax.fill_between(means.index, (means - stds).values, (means + stds).values, alpha=0.15, color=color,
+                                zorder=2)
+            ax.set_xscale("log", base=2)
+            ax.set_xticks(SENSORS)
+            ax.set_xticklabels([str(s) for s in SENSORS])
 
-            ax.errorbar(
-                means.index,
-                means.values,
-                yerr=stds.values,
-                marker="o",
-                linewidth=2,
-                markersize=7,
-                capsize=5,
-                elinewidth=1.5,
-                capthick=1.5,
-                color=cmap(i),
-                alpha=0.7 if i == 0 else 1.0,
-                label=sys_label,
+            # Use scientific notation for the y-axis
+            ax.ticklabel_format(style="sci", axis="y", scilimits=(0, 0))
+
+            ax.legend(frameon=True, fancybox=False, edgecolor="gray")
+        else:
+            plot_data = []
+            for sensor_count in SENSORS:
+                sensor_data = []
+                for label in labels:
+                    vals = df[(df["Sensors"] == sensor_count) & (df["System"] == label)][y_col].dropna().values
+                    sensor_data.append(vals)
+                plot_data.append(sensor_data)
+
+            positions = []
+            widths = 0.35
+            delta = 0.2
+
+            for i, sensor_count in enumerate(SENSORS):
+                base_pos = i * 2.0
+                pos_sys1 = base_pos - delta
+                pos_sys2 = base_pos + delta
+                positions.extend([pos_sys1, pos_sys2])
+
+            flat_plot_data = []
+            for sensor_count in SENSORS:
+                for label in labels:
+                    vals = df[(df["Sensors"] == sensor_count) & (df["System"] == label)][y_col].dropna().values
+                    flat_plot_data.append(vals)
+
+            bplot = ax.boxplot(
+                flat_plot_data,
+                positions=positions,
+                vert=True,
+                patch_artist=True,
+                widths=widths,
+                flierprops=flier_props,
             )
 
-        ax.set_xscale("log", base=2)
-        if (y_col == "Convergence Time (ms)"):
-            ax.ticklabel_format(style="sci", axis="y", scilimits=(0, 0))
-        ax.set_xticks(SENSORS)
-        ax.set_xticklabels([str(s) for s in SENSORS])
-        ax.grid(True, which="major", linestyle="--", alpha=0.3)
-        ax.set_axisbelow(True)
-        if idx == 0:
-            ax.legend(frameon=False)
+            for patch, color in zip(bplot["boxes"], [colors[0], colors[1]] * len(SENSORS)):
+                patch.set_facecolor(color)
+
+            ax.set_xticks([i * 2.0 for i in range(len(SENSORS))])
+            ax.set_xticklabels([str(s) for s in SENSORS])
+
+            from matplotlib.patches import Patch
+
+            legend_elements = [
+                Patch(facecolor=colors[0], edgecolor='k', label=labels[0]),
+                Patch(facecolor=colors[1], edgecolor='k', label=labels[1])
+            ]
+            ax.legend(handles=legend_elements, frameon=True, fancybox=False, edgecolor="gray")
     else:
         ax.text(0.5, 0.5, "No Data Available", ha="center", va="center", transform=ax.transAxes)
 
     ax.set_xlabel("Number of Sensors")
-    ax.set_ylabel(labels[idx])
-
-fig.subplots_adjust(
-    left=0.08,
-    right=0.99,
-    top=0.92,
-    bottom=0.10,
-    wspace=0.30,
-    hspace=0.25,
-)
+    ax.set_ylabel(y_col)
+    ax.yaxis.grid(True, linestyle="--", alpha=0.7)
 
 plt.tight_layout()
+
+# ==========================================
+# 3. Save Figures
+# ==========================================
+
+output_path = Path("figure") / EXPERIMENT
+output_path.mkdir(parents=True, exist_ok=True)
 
 pdf_file = output_path / "s4_combined_metrics.pdf"
 png_file = output_path / "s4_combined_metrics.png"
 
-plt.savefig(pdf_file, bbox_inches="tight", dpi=300)
+plt.savefig(pdf_file, bbox_inches="tight")
 plt.savefig(png_file, bbox_inches="tight", dpi=300)
 plt.close(fig)
 
-print(f"Successfully saved combined 2x2 figure to:\n - {pdf_file}\n - {png_file}")
+print(f"Successfully saved combined 2x2 subplot figure to:\n - {pdf_file}\n - {png_file}")
+
+# ==========================================
+# 4. Print Data Summary
+# ==========================================
+print("\n" + "="*55)
+print("RESULTS SUMMARY (Mean ± Std)")
+print("="*55)
+for df, y_col, title, _ in configs:
+    if not df.empty:
+        print(f"\n{title}")
+        summary = df.groupby(["System", "Sensors"])[y_col].agg(["mean", "std"]).round(3)
+        print(summary.to_string())
+    else:
+        print(f"\n{title}: No data available.")
+print("="*55 + "\n")

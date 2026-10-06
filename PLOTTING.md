@@ -16,16 +16,16 @@
 poetry run python src/scenario2/plot/s2_combined_metrics.py
 ```
 
+## Scenario 5 (Use case paper)
+
+```bash
+poetry run python src/scenario5/plot/s5_use_case_combined_metrics.py
+```
+
 ## Scenario 4
 
 ```bash
-poetry run python src/scenario4/plot/s4_use_case_combined_metrics.py
-```
-
-## Scenario 5
-
-```bash
-poetry run python src/scenario5/plot/s5_combined_metrics.py
+poetry run python src/scenario4/plot/s4_combined_metrics.py
 ```
 
 ## Scenario 6
