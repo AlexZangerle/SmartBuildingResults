@@ -185,12 +185,11 @@ for sys_key, sys_label in systems.items():
             if len(matching) == 0:
                 continue
             propagation_ms = (matching[-1] - fire_detects[i]) / 1_000_000.0
-            if propagation_ms > 0:
-                propagation_records.append({
-                    "System": sys_label,
-                    "Sensors": sensor_count,
-                    "Propagation Time (ms)": propagation_ms,
-                })
+            propagation_records.append({
+                "System": sys_label,
+                "Sensors": sensor_count,
+                "Propagation Time (ms)": propagation_ms,
+            })
 df_propagation = pd.DataFrame(propagation_records)
 
 # ==========================================
@@ -312,8 +311,8 @@ plt.tight_layout()
 output_path = Path("figure") / EXPERIMENT
 output_path.mkdir(parents=True, exist_ok=True)
 
-pdf_file = output_path / "s4_combined_metrics.pdf"
-png_file = output_path / "s4_combined_metrics.png"
+pdf_file = output_path / "s4_combined_metrics_filter.pdf"
+png_file = output_path / "s4_combined_metrics_filter.png"
 
 plt.savefig(pdf_file, bbox_inches="tight")
 plt.savefig(png_file, bbox_inches="tight", dpi=300)
