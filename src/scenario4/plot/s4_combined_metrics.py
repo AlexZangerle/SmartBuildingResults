@@ -311,8 +311,8 @@ plt.tight_layout()
 output_path = Path("figure") / EXPERIMENT
 output_path.mkdir(parents=True, exist_ok=True)
 
-pdf_file = output_path / "s4_combined_metrics_filter.pdf"
-png_file = output_path / "s4_combined_metrics_filter.png"
+pdf_file = output_path / "s4_combined_metrics.pdf"
+png_file = output_path / "s4_combined_metrics.png"
 
 plt.savefig(pdf_file, bbox_inches="tight")
 plt.savefig(png_file, bbox_inches="tight", dpi=300)
